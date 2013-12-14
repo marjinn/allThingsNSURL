@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15B46246185B9C5A009EE2D7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B46245185B9C59009EE2D7 /* CoreLocation.framework */; };
+		15B46248185B9C64009EE2D7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B46247185B9C64009EE2D7 /* MapKit.framework */; };
+		15B4624B185B9EF5009EE2D7 /* CQMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B4624A185B9EF5009EE2D7 /* CQMapViewController.m */; };
+		15B4624E185BB6B3009EE2D7 /* CQPhotoAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B4624D185BB6B3009EE2D7 /* CQPhotoAnnotation.m */; };
 		15BB36071857ACE10084C21D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BB36061857ACE00084C21D /* Foundation.framework */; };
 		15BB36091857ACE10084C21D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BB36081857ACE10084C21D /* CoreGraphics.framework */; };
 		15BB360B1857ACE10084C21D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BB360A1857ACE10084C21D /* UIKit.framework */; };
 		15BB36111857ACE20084C21D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15BB360F1857ACE20084C21D /* InfoPlist.strings */; };
 		15BB36131857ACE20084C21D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BB36121857ACE20084C21D /* main.m */; };
 		15BB36171857ACE20084C21D /* CQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BB36161857ACE20084C21D /* CQAppDelegate.m */; };
-		15BB361A1857ACE20084C21D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BB36181857ACE20084C21D /* Main.storyboard */; };
+		15BB361A1857ACE20084C21D /* Main_old.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BB36181857ACE20084C21D /* Main_old.storyboard */; };
 		15BB361D1857ACE20084C21D /* CQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BB361C1857ACE20084C21D /* CQViewController.m */; };
 		15BB361F1857ACE30084C21D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15BB361E1857ACE30084C21D /* Images.xcassets */; };
 		15BB36261857ACE30084C21D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BB36251857ACE30084C21D /* XCTest.framework */; };
@@ -21,6 +25,8 @@
 		15BB36281857ACE30084C21D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BB360A1857ACE10084C21D /* UIKit.framework */; };
 		15BB36301857ACE30084C21D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15BB362E1857ACE30084C21D /* InfoPlist.strings */; };
 		15BB36321857ACE40084C21D /* AllThingsNSURLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BB36311857ACE40084C21D /* AllThingsNSURLTests.m */; };
+		15BB364018591F6F0084C21D /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 15BB363F18591F6E0084C21D /* Images */; };
+		15BB364118591F6F0084C21D /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 15BB363F18591F6E0084C21D /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15B46245185B9C59009EE2D7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		15B46247185B9C64009EE2D7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		15B46249185B9EF5009EE2D7 /* CQMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQMapViewController.h; sourceTree = "<group>"; };
+		15B4624A185B9EF5009EE2D7 /* CQMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQMapViewController.m; sourceTree = "<group>"; };
+		15B4624C185BB6B3009EE2D7 /* CQPhotoAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQPhotoAnnotation.h; sourceTree = "<group>"; };
+		15B4624D185BB6B3009EE2D7 /* CQPhotoAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQPhotoAnnotation.m; sourceTree = "<group>"; };
 		15BB36031857ACE00084C21D /* AllThingsNSURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllThingsNSURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15BB36061857ACE00084C21D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15BB36081857ACE10084C21D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,7 +56,7 @@
 		15BB36141857ACE20084C21D /* AllThingsNSURL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AllThingsNSURL-Prefix.pch"; sourceTree = "<group>"; };
 		15BB36151857ACE20084C21D /* CQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQAppDelegate.h; sourceTree = "<group>"; };
 		15BB36161857ACE20084C21D /* CQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQAppDelegate.m; sourceTree = "<group>"; };
-		15BB36191857ACE20084C21D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15BB36191857ACE20084C21D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_old.storyboard; sourceTree = "<group>"; };
 		15BB361B1857ACE20084C21D /* CQViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQViewController.h; sourceTree = "<group>"; };
 		15BB361C1857ACE20084C21D /* CQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQViewController.m; sourceTree = "<group>"; };
 		15BB361E1857ACE30084C21D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +65,7 @@
 		15BB362D1857ACE30084C21D /* AllThingsNSURLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AllThingsNSURLTests-Info.plist"; sourceTree = "<group>"; };
 		15BB362F1857ACE30084C21D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		15BB36311857ACE40084C21D /* AllThingsNSURLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllThingsNSURLTests.m; sourceTree = "<group>"; };
+		15BB363F18591F6E0084C21D /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B46248185B9C64009EE2D7 /* MapKit.framework in Frameworks */,
+				15B46246185B9C5A009EE2D7 /* CoreLocation.framework in Frameworks */,
 				15BB36091857ACE10084C21D /* CoreGraphics.framework in Frameworks */,
 				15BB360B1857ACE10084C21D /* UIKit.framework in Frameworks */,
 				15BB36071857ACE10084C21D /* Foundation.framework in Frameworks */,
@@ -101,6 +116,8 @@
 		15BB36051857ACE00084C21D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15B46247185B9C64009EE2D7 /* MapKit.framework */,
+				15B46245185B9C59009EE2D7 /* CoreLocation.framework */,
 				15BB36061857ACE00084C21D /* Foundation.framework */,
 				15BB36081857ACE10084C21D /* CoreGraphics.framework */,
 				15BB360A1857ACE10084C21D /* UIKit.framework */,
@@ -114,11 +131,13 @@
 			children = (
 				15BB36151857ACE20084C21D /* CQAppDelegate.h */,
 				15BB36161857ACE20084C21D /* CQAppDelegate.m */,
-				15BB36181857ACE20084C21D /* Main.storyboard */,
+				15BB36181857ACE20084C21D /* Main_old.storyboard */,
 				15BB361B1857ACE20084C21D /* CQViewController.h */,
 				15BB361C1857ACE20084C21D /* CQViewController.m */,
 				15BB361E1857ACE30084C21D /* Images.xcassets */,
 				15BB360D1857ACE20084C21D /* Supporting Files */,
+				15B46249185B9EF5009EE2D7 /* CQMapViewController.h */,
+				15B4624A185B9EF5009EE2D7 /* CQMapViewController.m */,
 			);
 			path = AllThingsNSURL;
 			sourceTree = "<group>";
@@ -126,10 +145,13 @@
 		15BB360D1857ACE20084C21D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				15BB363F18591F6E0084C21D /* Images */,
 				15BB360E1857ACE20084C21D /* AllThingsNSURL-Info.plist */,
 				15BB360F1857ACE20084C21D /* InfoPlist.strings */,
 				15BB36121857ACE20084C21D /* main.m */,
 				15BB36141857ACE20084C21D /* AllThingsNSURL-Prefix.pch */,
+				15B4624C185BB6B3009EE2D7 /* CQPhotoAnnotation.h */,
+				15B4624D185BB6B3009EE2D7 /* CQPhotoAnnotation.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,9 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BB364018591F6F0084C21D /* Images in Resources */,
 				15BB361F1857ACE30084C21D /* Images.xcassets in Resources */,
 				15BB36111857ACE20084C21D /* InfoPlist.strings in Resources */,
-				15BB361A1857ACE20084C21D /* Main.storyboard in Resources */,
+				15BB361A1857ACE20084C21D /* Main_old.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BB364118591F6F0084C21D /* Images in Resources */,
 				15BB36301857ACE30084C21D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,7 +275,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				15BB36171857ACE20084C21D /* CQAppDelegate.m in Sources */,
+				15B4624B185B9EF5009EE2D7 /* CQMapViewController.m in Sources */,
 				15BB36131857ACE20084C21D /* main.m in Sources */,
+				15B4624E185BB6B3009EE2D7 /* CQPhotoAnnotation.m in Sources */,
 				15BB361D1857ACE20084C21D /* CQViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,12 +309,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		15BB36181857ACE20084C21D /* Main.storyboard */ = {
+		15BB36181857ACE20084C21D /* Main_old.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				15BB36191857ACE20084C21D /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main_old.storyboard;
 			sourceTree = "<group>";
 		};
 		15BB362E1857ACE30084C21D /* InfoPlist.strings */ = {
@@ -461,6 +487,7 @@
 				15BB36371857ACE40084C21D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15BB36381857ACE40084C21D /* Build configuration list for PBXNativeTarget "AllThingsNSURLTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +496,7 @@
 				15BB363A1857ACE40084C21D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

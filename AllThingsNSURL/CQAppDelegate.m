@@ -8,12 +8,36 @@
 
 #import "CQAppDelegate.h"
 
+@interface CQAppDelegate ()
+{
+    __strong UIView* baseView;
+    
+}
+
+@end
+
+
+
 @implementation CQAppDelegate
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self myOverlay];
+
+    [NSTimer scheduledTimerWithTimeInterval:3.0 target:self //display for 3 secs
+                                   selector:@selector(continueLoadingWhatever:)
+                                   userInfo:nil
+                                    repeats:NO];
+    
     return YES;
+}
+
+
+- (void)continueLoadingWhatever:(id)sender {
+    //do whatever comes after here
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -42,5 +66,40 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+-(void)myOverlay
+{
+    baseView = [[UIView alloc]init];
+    //baseView Frame
+    CGRect baseRectFrame;
+    baseRectFrame = [[[UIApplication sharedApplication]keyWindow]frame];
+    //set frame
+    [baseView setFrame:baseRectFrame];
+    [baseView setBackgroundColor:[UIColor grayColor]];
+    [baseView setAlpha:0.85];
+    //add BaseView to keywindow
+    [[self window] addSubview:baseView];
+    [[self window] bringSubviewToFront:baseView];
+    
+    
+    //first rounded View
+    UIView* firstBorder;
+    firstBorder = [[UIView alloc]init];
+    //frame
+    CGRect firstBorderFrame;
+    firstBorderFrame.origin.x = 10.0f;
+    firstBorderFrame.origin.y = 20.0f;
+    firstBorderFrame.size.width = 110.0f;
+    firstBorderFrame.size.height = 110.0f;
+    [firstBorder setFrame:firstBorderFrame];
+    [[firstBorder layer]setBorderColor:[[UIColor whiteColor]CGColor]];
+    [[firstBorder layer]setCornerRadius:5.0f];
+    [[firstBorder layer]setBorderWidth:2.0f];
+    //add baseView
+    [baseView addSubview:firstBorder];
+}
+
+
 
 @end
