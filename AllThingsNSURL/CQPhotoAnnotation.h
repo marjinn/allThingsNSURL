@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
+//MkAnnotation subclass
+//
 @interface CQPhotoAnnotation : NSObject <MKAnnotation>
 
 @end

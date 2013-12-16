@@ -220,7 +220,10 @@ https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/
 
 
 
-
+//The method updateSubtitle will be called when user touches
+//an annotation on the map. It will update the annotation
+//callout’s subtitle to display the name of the place where
+//the photo was taken.
 
 -(void)updateSubtitle
 {
@@ -244,6 +247,12 @@ https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/
     err = nil;
     
     //reverse geocoding
+    //-----------------
+    //invoke the reverseGeocodeLocation:completionHandler: method,
+    //from which you get an array of placemarks, with the most relevant one
+    //being at index 0. You then extract the information you need from the
+    //CLPlacemark object using the placemarkToString:
+    //helper method and update subtitle for that annotation.
     [geocoder reverseGeocodeLocation:location
                    completionHandler:^(NSArray *placemarks, NSError *error) {
                        //
@@ -253,6 +262,7 @@ https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/
                            CLPlacemark* placemark;
                            placemark = [placemarks objectAtIndex:0];
                            
+                           //extract info from CLPlacemark obj
                            //set Subtitle - placemark obj is passed to
                            //a function (placemarkToString)
                            //that returns the string value

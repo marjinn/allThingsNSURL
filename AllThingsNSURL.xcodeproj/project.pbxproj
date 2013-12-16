@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		159D1231185E217600F24C96 /* CQJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 159D1230185E217500F24C96 /* CQJSONParser.m */; };
 		15B46246185B9C5A009EE2D7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B46245185B9C59009EE2D7 /* CoreLocation.framework */; };
 		15B46248185B9C64009EE2D7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B46247185B9C64009EE2D7 /* MapKit.framework */; };
 		15B4624B185B9EF5009EE2D7 /* CQMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B4624A185B9EF5009EE2D7 /* CQMapViewController.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		159D122F185E217500F24C96 /* CQJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQJSONParser.h; sourceTree = "<group>"; };
+		159D1230185E217500F24C96 /* CQJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQJSONParser.m; sourceTree = "<group>"; };
 		15B46245185B9C59009EE2D7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		15B46247185B9C64009EE2D7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		15B46249185B9EF5009EE2D7 /* CQMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQMapViewController.h; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				15BB36141857ACE20084C21D /* AllThingsNSURL-Prefix.pch */,
 				15B4624C185BB6B3009EE2D7 /* CQPhotoAnnotation.h */,
 				15B4624D185BB6B3009EE2D7 /* CQPhotoAnnotation.m */,
+				159D122F185E217500F24C96 /* CQJSONParser.h */,
+				159D1230185E217500F24C96 /* CQJSONParser.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				15B4624B185B9EF5009EE2D7 /* CQMapViewController.m in Sources */,
 				15BB36131857ACE20084C21D /* main.m in Sources */,
 				15B4624E185BB6B3009EE2D7 /* CQPhotoAnnotation.m in Sources */,
+				159D1231185E217600F24C96 /* CQJSONParser.m in Sources */,
 				15BB361D1857ACE20084C21D /* CQViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
